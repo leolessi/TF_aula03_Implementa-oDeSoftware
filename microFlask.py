@@ -10,11 +10,11 @@ alunos = [
 
 
 @app.route("/alunos", methods=["GET"])
-def obter_aluno():
+def obter_alunos():
     return jsonify(alunos)
 
 
-@app.route("/alunos/", methods=["GET"])
+@app.route("/alunos/<int:aluno_id>", methods=["GET"])
 def obter_aluno(aluno_id):
     aluno = next((p for p in alunos if p["id"] == aluno_id), None)
     if aluno:
