@@ -5,8 +5,9 @@ USE alunos;
 CREATE TABLE alunos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
+    idade INT NOT NULL,
     curso VARCHAR(100) NOT NULL,
 );
 
--- INSERT INTO alunos (nome, curso) VALUES ('Aluno A', 'Direito');
--- INSERT INTO alunos (nome, curso) VALUES ('Aluno B', 'ADS');
+-- INSERT INTO alunos (nome, idade, curso) VALUES ('Aluno A', 18, 'Direito');
+-- INSERT INTO alunos (nome, idade, curso) VALUES ('Aluno B', 21, 'ADS');

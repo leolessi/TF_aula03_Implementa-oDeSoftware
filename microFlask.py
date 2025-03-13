@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 # Dados de exemplo (em produção, usaríamos um banco de dados)
 alunos = [
-    {"id": 1, "nome": "Aluno A", "curso": "Direito"},
-    {"id": 2, "nome": "Aluno B", "curso": "ADS"},
+    {"id": 1, "nome": "Aluno A", "idade": 18, "curso": "Direito"},
+    {"id": 2, "nome": "Aluno B", "idade": 21, "curso": "ADS"},
 ]
 
 
