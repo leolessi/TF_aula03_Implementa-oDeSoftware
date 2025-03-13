@@ -16,7 +16,7 @@ def obter_alunos():
 
 @app.route("/alunos/<int:aluno_id>", methods=["GET"])
 def obter_aluno(aluno_id):
-    aluno = next((p for p in alunos if p["id"] == aluno_id), None)
+    aluno = next((a for a in alunos if a["id"] == aluno_id), None)
     if aluno:
         return jsonify(aluno)
     return jsonify({"erro": "Aluno não encontrado"}), 404
